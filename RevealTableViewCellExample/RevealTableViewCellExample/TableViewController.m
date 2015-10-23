@@ -313,11 +313,15 @@ static NSString *RevealCellReuseIdentifier = @"RevealCellReuseIdentifier";
             [self presentDeleteActionSheetForItem:item];
             return NO;
         }];
-    
+        
         item1.backgroundColor = [UIColor redColor];
         item1.tintColor = [UIColor whiteColor];
         item1.width = 75;
-    
+        item1.font = [UIFont fontWithName:@"Baskerville" size:20.0];
+        item1.borderColor = [UIColor blackColor];
+        item1.borderThickness = 1.4;
+        item1.borderEdge = UIRectEdgeLeft;
+        
         SWCellButtonItem *item2 = [SWCellButtonItem itemWithTitle:@"Open box" handler:^(SWCellButtonItem *item, SWRevealTableViewCell *cell)
         {
             _revealingCellIndexPath = [self.tableView indexPathForCell:cell];
