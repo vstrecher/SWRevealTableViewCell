@@ -86,6 +86,10 @@
 @property(nonatomic) UIColor *tintColor;         // default is nil
 @property(nonatomic) NSString *title;            // default is nil
 @property(nonatomic) UIVisualEffect *visualEffect;
+@property(nonatomic) UIFont *font;
+@property(nonatomic) UIRectEdge borderEdge;
+@property(nonatomic) UIColor *borderColor;
+@property(nonatomic) CGFloat borderThickness;
 
 @end
 
